@@ -1,4 +1,4 @@
-use pallabidb;
+use sayandb;
 create table emp1(
 ID numeric(2),
 ID_Name varchar(10),
@@ -16,12 +16,12 @@ Designation varchar(10),
 Age numeric(2)
 );
 insert into emp1 values
-(1,'Rohit',6700,'Manager',24),
-(2,'Sunil',6200,'Engineer',27),
-(3,'Payal',6300,'Engineer',25),
-(4,'Kunal',6700,'Trainee',28),
-(5,'Sunita',6230,'Trainee',26),
-(6,'Bimal',7000,'Trainee',25);
+(1,'Sayan',6700,'Manager',24),
+(2,'Sankhajit',6200,'Engineer',27),
+(3,'Akash',6300,'Engineer',25),
+(4,'Owasim',6700,'Trainee',28),
+(5,'Ravi',6230,'Trainee',26),
+(6,'Pallabi',7000,'Trainee',25);
 insert into emp_trainee select * from emp1;
 select * from emp1,emp_trainee;
 alter table emp1 add Skill varchar(15) after basic;
