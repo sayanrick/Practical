@@ -1,4 +1,4 @@
-use pallabidb;
+use sayandb;
 create table CUSTOMER(
 cust_id varchar(15),
 Fname varchar(15),
