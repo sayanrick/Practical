@@ -17,6 +17,9 @@ select * from employee;
 //adding a extra column contact
 alter table employee add column contact int;
 
+// truncate a table
+truncate table employee;
+
 //insertsing data into the table
 insert into employee (emp_id, first_name, last_name, salary) values (101, 'Sayan', 'Das', 40000);
 
@@ -30,6 +33,9 @@ insert into employee (emp_id, first_name, last_name, salary) values (105, 'Alex'
 update employee set last_name = 'Hey' where emp_id = 102;
 
 update employee set first_name = 'John' where emp_id = 105;
+
+// deleting the table
+drop table employee;
 
 //deleting datas of 2 employees
 delete from employee where emp_id in (103, 104);
